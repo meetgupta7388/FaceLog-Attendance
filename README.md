@@ -1,70 +1,66 @@
 # Face Recognition Attendance System
 
-Welcome to the Face Recognition Attendance System! This project automates attendance tracking using face recognition technology. The system is developed in Python, leveraging OpenCV and face_recognition libraries.
+This project implements a face recognition-based attendance system using Python, OpenCV, and the face_recognition library.
 
 ## Features
 
-- Real-time face recognition for attendance tracking.
-- Training the system with a diverse dataset for accurate recognition.
-- Automated logging of attendance data with timestamps.
-- Compatibility with various environments and lighting conditions.
+- Real-time face detection and recognition using webcam
+- Automatic attendance marking in a CSV file
+- Support for multiple users
+- Full-screen webcam display
 
-## Getting Started
-
-### Prerequisites
+## Requirements
 
 - Python 3.x
 - OpenCV
 - face_recognition
-- Other dependencies (Install using `pip install -r requirements.txt`)
+- numpy
+- screeninfo
+
+For a complete list of dependencies, see `requirements.txt`.
 
 ## Installation
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/meetgupta7388/face-recognition-attendance.git
-   cd face-recognition-attendance
-2. **Create a virtual environment (optional but recommended)**:
+1. Clone this repository:
+    ```bash
+git clone https://github.com/meetgupta7388/face-recognition-attendance.git
 
-'''bash
-python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-
-3. **Install dependencies**:
-
-'''bash
+3. Install the required packages:
+    ```bash
 pip install -r requirements.txt
 
 ## Usage
 
-1. **Prepare the dataset**:
-   
-- Create a folder named dataset in the project directory.
-- Inside the dataset folder, create subfolders for each person with the person's name as the folder name.
-- Add multiple images of each person in their respective subfolders.
+1. Add training images to the `Training_images` directory. Each image should be named after the person it represents (e.g., "John_Doe.jpg").
 
-2. **Train the model**:
+2. Run the main script:
+   ```bash
+python app.py
 
-'''bash
-python train_model.py
+4. The webcam will open in full-screen mode. Recognized faces will be highlighted with a green box and their names displayed.
 
-3. **Run the attendance system**:
+5. Attendance will be automatically marked in `Attendance.csv`.
 
-'''bash
-python recognize.py
+6. Press 'q' to quit the application.
 
-## How It Works
+## File Structure
 
-1. **Data Preparation**:
+- `app.py`: Main application script
+- `Attendance.csv`: CSV file for storing attendance records
+- `Training_images/`: Directory for storing training images
+- `requirements.txt`: List of required Python packages
 
-The system uses a dataset of images for training. Each person's images are stored in separate subfolders named after the person.
-2. **Model Training**:
+## How it works
 
-The training script processes the images and trains the face recognition model.
-
-3. **Real-Time Recognition**:
-
-The recognition script captures video from the webcam, detects faces, and matches them with the trained dataset to log attendance.
+1. The script loads training images and encodes known faces.
+2. It captures video from the webcam and processes each frame.
+3. Faces in the frame are detected and compared with known faces.
+4. If a match is found, the person's name is displayed and attendance is marked.
 
 ## Contributing
-Contributions are welcome! Please fork this repository and submit a pull request for any enhancements, bug fixes, or features.   
+
+Contributions, issues, and feature requests are welcome. Feel free to check [issues page](https://github.com/yourusername/face-recognition-attendance/issues) if you want to contribute.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
