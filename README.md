@@ -23,11 +23,11 @@ For a complete list of dependencies, see `requirements.txt`.
 
 1. Clone this repository:
     ```bash
-git clone https://github.com/meetgupta7388/face-recognition-attendance.git
+    git clone https://github.com/meetgupta7388/face-recognition-attendance.git
 
-3. Install the required packages:
+2. Install the required packages:
     ```bash
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
 ## Usage
 
@@ -35,13 +35,14 @@ pip install -r requirements.txt
 
 2. Run the main script:
    ```bash
-python app.py
+   python app.py
 
-4. The webcam will open in full-screen mode. Recognized faces will be highlighted with a green box and their names displayed.
+   
+3. The webcam will open in full-screen mode. Recognized faces will be highlighted with a green box and their names displayed.
 
-5. Attendance will be automatically marked in `Attendance.csv`.
+4. Attendance will be automatically marked in `Attendance.csv`.
 
-6. Press 'q' to quit the application.
+5. Press 'q' to quit the application.
 
 ## File Structure
 
@@ -61,6 +62,4 @@ python app.py
 
 Contributions, issues, and feature requests are welcome. Feel free to check [issues page](https://github.com/yourusername/face-recognition-attendance/issues) if you want to contribute.
 
-## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
