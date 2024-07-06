@@ -35,7 +35,7 @@ For a complete list of dependencies, see `requirements.txt`.
 
 2. Run the main script:
    ```bash
-   python app.py
+   python attend.py
 
    
 3. The webcam will open in full-screen mode. Recognized faces will be highlighted with a green box and their names displayed.
@@ -46,7 +46,7 @@ For a complete list of dependencies, see `requirements.txt`.
 
 ## File Structure
 
-- `app.py`: Main application script
+- `attend.py`: Main application script
 - `Attendance.csv`: CSV file for storing attendance records
 - `Training_images/`: Directory for storing training images
 - `requirements.txt`: List of required Python packages
