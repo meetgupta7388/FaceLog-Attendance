@@ -18,7 +18,7 @@ Welcome to the Face Recognition Attendance System! This project automates attend
 - face_recognition
 - Other dependencies (Install using `pip install -r requirements.txt`)
 
-### Installation
+## Installation
 
 1. **Clone the repository:**
    ```bash
@@ -35,7 +35,7 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 '''bash
 pip install -r requirements.txt
 
-### Usage
+## Usage
 
 1. **Prepare the dataset**:
    
@@ -53,7 +53,7 @@ python train_model.py
 '''bash
 python recognize.py
 
-### How It Works
+## How It Works
 
 1. **Data Preparation**:
 
