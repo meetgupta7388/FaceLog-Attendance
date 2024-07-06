@@ -66,5 +66,5 @@ The training script processes the images and trains the face recognition model.
 
 The recognition script captures video from the webcam, detects faces, and matches them with the trained dataset to log attendance.
 
-### Contributing
+## Contributing
 Contributions are welcome! Please fork this repository and submit a pull request for any enhancements, bug fixes, or features.   
