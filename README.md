@@ -60,6 +60,6 @@ For a complete list of dependencies, see `requirements.txt`.
 
 ## Contributing
 
-Contributions, issues, and feature requests are welcome. Feel free to check [issues page](https://github.com/yourusername/face-recognition-attendance/issues) if you want to contribute.
+Contributions, issues, and feature requests are welcome. Feel free to check this project if you want to contribute.
 
 
