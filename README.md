@@ -23,7 +23,7 @@ For a complete list of dependencies, see `requirements.txt`.
 
 1. Clone this repository:
     ```bash
-    git clone https://github.com/meetgupta7388/face-recognition-attendance.git
+    git clone https://github.com/meetgupta7388/Face-Recognition-Attendance-System.git
 
 2. Install the required packages:
     ```bash
